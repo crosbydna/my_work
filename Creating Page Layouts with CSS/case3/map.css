@@ -1,0 +1,158 @@
+/*
+   New Perspectives on HTML
+   Tutorial 4
+   Case Problem 3
+
+   Trail Map Style Sheet
+   Author: Ron Bartlett
+   Date:   3/1/2014
+
+   Filename:         map.css
+   Supporting Files: 
+
+*/
+
+/* Display styles */
+nav, section, figure, figcaption {
+   display: block;
+}
+
+time {
+   display: inline;
+}
+
+
+
+/* Default styles */
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+
+
+/* Page container styles */
+#page {
+
+   background: rgb(255, 255, 128) url(bluebar.png) repeat-y;
+
+   border: 15px ridge rgb(70, 76, 222);
+   -moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
+   border-radius: 50px;
+
+   height: 750px;
+   margin: 10px auto 200px;
+   width: 900px;
+}
+
+
+
+/* Navigation list styles */
+nav.vertical {
+   float: left;
+   width: 230px;
+}
+
+nav.vertical li {
+   list-style: none;
+   margin: 25px 20px;
+}
+
+nav.vertical li a {
+   color: white;
+   text-decoration: none;
+}
+
+nav.vertical li a:hover {
+   color: yellow;
+}
+
+
+
+/* Summary section styles */
+#summary {
+   float: left;
+   margin-left: 30px;
+   width: 600px;
+}
+
+#summary h1 {
+   color: rgb(70, 76, 222);
+   font-size: 24px;
+   font-weight: normal;
+   letter-spacing: 5px;
+   margin: 20px;
+}
+
+#summary p {
+   margin: 10px;
+}
+
+
+
+/* Map section styles */
+#map {
+   position: relative;
+
+   background: white url(lpmap.jpg) top left no-repeat;
+   border: 1px solid black;
+   float: left;
+   margin-left: 30px;
+   width: 600px;
+   height: 294px;
+}
+
+
+
+/* popup styles */
+
+figure  {
+   background-color: rgb(70, 76, 222);
+
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border-radius: 15px;
+
+   clip: rect(0px, 20px, 20px, 0px);
+   color: white;
+   position: absolute;
+   width: 150px;
+   z-index: 1;
+}
+
+figure:hover {
+   clip: auto;
+   z-index: 2;
+}
+
+
+figure figcaption {
+   margin: 10px;
+   font-size: 12px;
+}
+
+figcaption time {
+   color: yellow;
+}
+
+
+
+
+/* Location of popup boxes */
+#point0 {top: 60px; left: 560px;}
+#point1 {top: 90px; left: 277px;}
+#point2 {top: 0px; left: 175px;}
+#point3 {top: 115px; left: 110px;}
+#point4 {top: 165px; left: 55px;}
+#point5 {top: 180px; left: 5px;}
+#point6 {top: 222px; left: 15px;}
+#point7 {top: 245px; left: 50px;}
+#point8 {top: 245px; left: 100px;}
+#point9 {top: 220px; left: 90px;}
+

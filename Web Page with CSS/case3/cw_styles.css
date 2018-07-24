@@ -1,0 +1,124 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 3
+
+   Civil War History Text and Color Style
+   Author: Peter Craft
+   Date:   3/1/2014
+
+   Filename:         cw_styles.css
+   Supporting Files: cw_layout.css
+
+*/
+
+/* Import layout style sheet */
+@import url(cw_layout.css);
+
+
+/* Body styles */
+
+body {
+   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+
+
+/* Heading styles */
+
+h1, h2, h3, h4, h5, h6 {
+   color: hsla(212, 0%, 0%, 0.4);
+   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+   font-weight: normal;
+   letter-spacing: 5px;
+   text-indent: 5px;
+}
+
+body > header > h1 {
+   background-color: hsl(212, 100%, 29%);
+}
+
+
+
+/* Navigation list styles */
+nav.horizontal ul {
+  font-family: 'Century Gothic MS', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 20px;
+  list-style-type: none;
+}
+
+nav.horizontal a {
+   color: hsl(212, 100%, 70%);
+   text-decoration: none;
+}
+
+nav.horizontal a:hover {
+   color: hsl(212, 100%, 29%);
+}
+
+
+nav.vertical  {
+   background-color: hsl(32, 100%, 95%);
+}
+
+nav.vertical h4 {
+   color: hsla(32, 0%, 0%, 0.5);
+   font-size: 18px;
+   text-indent: 15px;
+}   
+
+
+/* Styles to create a nested outline */
+
+nav.vertical ol {
+   line-height: 2em;
+   list-style-type: upper-roman;
+}
+
+nav.vertical ol ol {
+   list-style-type: upper-alpha;
+}
+
+
+
+
+/* Hypertext links styles */
+
+nav.vertical a {
+   color: hsla(212, 100%, 29%, 0.6);
+   text-decoration: none;
+}
+
+nav.vertical a:hover {
+   color: hsla(212, 100%, 29%, 1);
+   text-decoration: underline;
+}
+
+
+
+/* Section styles */
+
+section {
+   background-color: hsl(212, 95%, 90%);
+}
+
+
+
+/* Article styles */
+
+article h2+p:first-letter {
+   font-size: 32px;
+}
+
+
+
+/* Footer styles */
+
+footer p {
+   font-size: 10px;
+   line-height: 30px;
+   text-align: center;
+}

@@ -1,0 +1,80 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 1
+
+   Comment Form Style Sheet
+   Author: Steve Lavent
+   Date:   3/1/2014
+
+   Filename:         comments.css
+   Supporting Files: go.png, stop.png
+
+*/
+
+fieldset {
+   background-color: rgb(245, 245, 255);
+   margin: 15px auto;
+   padding: 5px;
+   width: 90%;
+}
+
+label {
+   clear: left;
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   width: 100%;
+}
+
+input, textarea {
+   display: block;
+   float: right;
+   font-size: 0.9em;
+   width: 55%;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+textarea {
+   height: 150px;
+}
+
+
+
+input[type="submit"] {
+   clear: both;
+   display: block;
+   float: none;
+   height: 30px;
+   margin: 5px auto;
+   width: 200px;
+}
+
+
+
+/* Validation styles */
+
+input:focus, textarea:focus {
+   background-color: rgb(225, 225, 240);
+}
+
+input:focus:valid {
+   background: rgb(225, 240, 225) url(go.png) bottom right no-repeat;
+
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
+}
+
+input:focus:invalid {
+   background: rgb(240, 225, 225) url(stop.png) bottom right no-repeat;
+
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
+}
