@@ -1,0 +1,127 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 2
+
+   Mountain Wheels Text and Color Style
+   Author: Adriana Turchenko
+   Date:   3/1/2014
+
+   Filename:         mw_layout.css
+   Supporting Files: none
+
+*/
+
+/* Body style for the default font family */
+
+body {
+   font-family: Tahoma, Geneva, sans-serif;
+}
+
+
+
+/* Style for the article header element */
+
+#articleheader {
+   letter-spacing: 7px;
+   font-size: 18px;
+   font-weight: normal;
+   text-align: center;
+}
+
+
+
+/* Navigation list styles */
+nav {
+   background-color: rgb(125, 120, 89);
+}
+
+nav ul {
+   line-height: 3em;
+   list-style-type: none;
+}
+
+nav ul li a {
+   color: white;
+   color: rgba(255, 255, 255, 0.5);
+   text-decoration: none;
+}
+
+nav ul li:hover {
+   background-color: rgb(131, 121, 36);
+   list-style-image: url(wheelmarker.png);
+}
+
+nav ul li a:hover {
+   color: yellow;
+   color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+/* Styles for the left section sidebar */
+
+#leftsection > p {
+   font-size: 22px;
+}
+
+/* Display the first line of the first paragraph in uppercase letters */
+
+#leftsection > p:first-of-type:first-line {
+   text-transform: uppercase;
+}
+
+
+
+/* Styles for block quotes */
+
+blockquote {
+   background-color: rgb(131, 121, 36);
+   color: white;
+   font-family: 'Comic Sans MS', Times, cursive;
+   font-size: 16px;
+}
+
+/* Add quotation marks before and after quoted material */
+blockquote p:before {
+   content: '"';
+}
+
+blockquote p:after {
+   content: '"';
+}
+
+
+
+
+/* Styles for the right section element */
+
+#rightsection h1 {
+   font-size: 22px;
+   font-weight: normal;
+   letter-spacing: 3px;
+   text-align: center;
+}
+
+#rightsection h2 {
+   font-size: 18px;
+   font-weight: normal;
+   text-align: right;
+}
+
+#rightsection p {
+   color: gray;
+   font-size: 14px;
+   text-align: justify;
+}
+
+
+
+/* Styles for the footer */
+
+footer address {
+   font-size: 16px;
+   font-style: normal;
+   text-align: center;
+}
