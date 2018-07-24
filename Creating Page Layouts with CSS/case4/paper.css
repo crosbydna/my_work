@@ -1,0 +1,252 @@
+/*
+   New Perspectives on HTML
+   Tutorial 4
+   Case Problem 4
+
+   Trail Map Style Sheet
+   Author: Kevin Webber
+   Date:   3/1/2014
+
+   Filename:         paper.css
+   Supporting Files: parch.jpg, parch2.jpg
+
+*/
+
+/* Display styles */
+nav, header, section, article, aside, footer {
+   display: block;
+}
+
+/* Default Styles */
+
+body, body * {
+   font-size: inherit;
+   margin: 0px;
+   padding: 0px;
+   line-height: 1.4em;
+   text-decoration: none;
+}
+
+h1, h2, h3 {
+   font-weight: normal;
+   letter-spacing: 0.3em;
+}
+
+
+/* Body Styles */
+
+body {
+   font-family: Verdana, Geneva, sans-serif;
+   width: 95%;
+   min-width: 1000px;
+   max-width: 1400px;
+   margin: 0px auto;
+}
+
+
+/* Header Styles */
+
+header {
+   background: url(parch2.jpg);
+   text-align: left;
+   width: 100%;
+}
+
+/* Navigation List Styles */
+
+nav.vertical {
+   background-image: url(parch2.jpg);
+   float: left;
+   width: 15%;
+   min-height: 1000px;
+}
+
+nav.vertical ul {
+   list-style: none;
+}
+
+nav.vertical li {
+   display: block;
+   height: 30px;
+   margin: 0px 0px 5px 0px;
+}
+
+nav.vertical li.newgroup {
+   margin-top: 20px;
+}
+
+nav.vertical li:first-of-type {
+   text-transform: uppercase;
+   margin-top: 60px;
+   margin-bottom: 30px;
+   font-size: 1.1em;
+}
+
+nav.vertical li a {
+   color: black;
+   display: block;
+   font-size: 0.9em;
+   text-indent: 10px;
+   width: 100%;
+}
+
+nav.vertical li a:hover {
+   background-color: white;
+   outline: 1px solid rgb(58, 53, 37);
+}
+
+
+
+/* Section Styles */
+
+section {
+   float: left;
+   width: 40.5%;
+   margin-left: 2%
+}
+
+section p {
+   margin: 15px;
+}
+
+
+
+/* Left Section  Styles */
+
+section:first-of-type article:first-of-type > h1 {
+   font-size: 2em;
+}
+
+section:first-of-type article:first-of-type img {
+   float: right;
+   width: 25%;
+   margin: 0px 0px 10px 10px;
+}
+
+section:first-of-type article:first-of-type p:first-of-type:first-line {
+   text-transform: uppercase;
+}
+
+section:first-of-type article:last-of-type > h1 {
+   font-size: 1.3em;
+}
+
+section:first-of-type article:last-of-type p:first-of-type:first-line {
+   text-transform: uppercase;
+}
+
+section:last-of-type {
+   background: url(parch.jpg);
+}
+
+
+/* Right Section  Styles */
+
+section:last-of-type article:first-of-type > h1 {
+   background: url(cougar.jpg) bottom right no-repeat;
+   background-size: auto 100%;
+   background-color: rgb(239, 231, 192); 
+   height: 75px;
+   font-size: 1.3em;
+}
+
+section:last-of-type article:last-of-type p:first-of-type:first-line {
+   text-transform: uppercase;
+}
+
+/* Aside Styles */
+
+aside {
+   background-color: rgb(175, 145, 93);
+
+   -moz-border-radius: 30px;
+   -webkit-border-radius: 30px;
+   border-radius: 30px;
+
+   width: 50%;
+   float: right;
+   margin-top: 20px;
+   margin-left: 10px;
+   margin-bottom: 10px;
+}
+
+aside h1 {
+   background-color: white;
+   border: 1px solid black;
+   font-size: 1em;
+   text-align: center;
+}
+
+aside ul {
+   margin: 30px;
+   list-style: disc;
+}
+
+aside ul li {
+   font-size: 0.75em;
+   margin: 10px 0px;
+}
+
+
+
+
+/* Links to Inside Articles */
+
+nav#links2 {
+   height: 200px;
+   background: url(parch2.jpg); 
+   position: relative;
+}
+
+nav#links2 div {
+   width: 50%;
+}
+
+nav#links2 div:first-of-type {
+   position: absolute;
+   top: 40px;
+   left: 0px;
+}
+
+nav#links2 div:last-of-type {
+   position: absolute;
+   top: 40px;
+   left: 50%;
+}
+
+nav#links2 h1 {
+   font-size: 1.3em;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+nav#links2 ul {
+   list-style: square;
+   margin-left: 30px;
+}
+
+nav#links2 a {
+   font-size: 0.7em;
+   color: black;
+}
+
+nav#links2 a:hover {
+   color: blue;
+}
+
+
+/* Footer Styles */
+
+footer {
+   margin-top: 20px;
+   clear: left;
+}
+
+footer address {
+   text-align: center;
+   font-style: normal;
+   font-size: 0.7em;
+   border-top: 2px solid rgb(58, 53, 37);
+}
+
+   
